@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, Wrench } from "lucide-react";
-import companyData from "@/config/company.json";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +33,7 @@ export default function Navigation() {
               <Wrench className="text-white text-lg" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">{companyData.company.shortName}</h1>
+              <h1 className="text-xl font-bold text-foreground">STO Oerlicke</h1>
               <p className="text-xs text-muted-foreground">Sanitär-Technik</p>
             </div>
           </div>
@@ -68,11 +67,11 @@ export default function Navigation() {
           
           <div className="flex items-center space-x-4">
             <a 
-              href={`tel:${companyData.contact.phone.replace(/\s/g, '')}`}
+              href="tel:06619427416" 
               className="hidden md:flex items-center space-x-2 text-primary hover:text-accent transition-colors"
             >
               <Phone className="h-4 w-4" />
-              <span className="font-semibold">{companyData.contact.phone}</span>
+              <span className="font-semibold">0661 942 7416</span>
             </a>
             
             <Sheet>
@@ -109,11 +108,11 @@ export default function Navigation() {
                   </button>
                   <div className="pt-4 border-t">
                     <a 
-                      href={`tel:${companyData.contact.phone.replace(/\s/g, '')}`}
+                      href="tel:06619427416" 
                       className="flex items-center space-x-2 text-primary hover:text-accent transition-colors"
                     >
                       <Phone className="h-4 w-4" />
-                      <span className="font-semibold">{companyData.contact.phone}</span>
+                      <span className="font-semibold">0661 942 7416</span>
                     </a>
                   </div>
                 </div>

@@ -1,12 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Wrench, Phone, Smartphone, Mail, MapPin, Tag, Shield } from "lucide-react";
-import companyData from "@/config/company.json";
-
-const iconMap = {
-  Tag,
-  Shield
-};
 
 export default function Footer() {
   return (
@@ -19,32 +13,33 @@ export default function Footer() {
                 <Wrench className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">{companyData.company.shortName}</h3>
+                <h3 className="text-xl font-bold">STO Oerlicke</h3>
                 <p className="text-sm text-gray-400">Sanitär-Technik</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              {companyData.company.description}
+              Ihr Meisterbetrieb für Sanitär- und Heizungstechnik in Fulda. 
+              Seit 1999 mit Erfahrung und Qualität.
             </p>
             <div className="flex space-x-4">
               <Button 
                 size="sm" 
                 className="bg-blue-600 hover:bg-blue-700 w-10 h-10 p-0"
-                onClick={() => window.open(companyData.socialMedia.facebook, "_blank")}
+                onClick={() => window.open("https://www.facebook.com", "_blank")}
               >
                 <i className="fab fa-facebook-f" />
               </Button>
               <Button 
                 size="sm" 
                 className="bg-green-600 hover:bg-green-700 w-10 h-10 p-0"
-                onClick={() => window.open(companyData.socialMedia.whatsapp, "_blank")}
+                onClick={() => window.open("https://wa.me/491715044073", "_blank")}
               >
                 <i className="fab fa-whatsapp" />
               </Button>
               <Button 
                 size="sm" 
                 className="bg-red-600 hover:bg-red-700 w-10 h-10 p-0"
-                onClick={() => window.open(companyData.socialMedia.googleMaps, "_blank")}
+                onClick={() => window.open("https://www.google.com/maps/place/Brüder-Grimm-Straße+43,+36100+Petersberg", "_blank")}
               >
                 <i className="fab fa-google" />
               </Button>
@@ -54,13 +49,11 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              {companyData.services.map((service, index) => (
-                <li key={index}>
-                  <a href="#services" className="hover:text-white transition-colors">
-                    {service.title}
-                  </a>
-                </li>
-              ))}
+              <li><a href="#services" className="hover:text-white transition-colors">Notdienst 24h</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Badsanierung</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Heizungsanlagen</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Solaranlagen</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Regenwassernutzung</a></li>
             </ul>
           </div>
           
@@ -69,25 +62,19 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <a href={`tel:${companyData.contact.phone.replace(/\s/g, '')}`} className="hover:text-white transition-colors">
-                  {companyData.contact.phone}
-                </a>
+                <a href="tel:06619427416" className="hover:text-white transition-colors">0661 942 7416</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Smartphone className="h-4 w-4" />
-                <a href={`tel:${companyData.contact.mobile.replace(/\s/g, '')}`} className="hover:text-white transition-colors">
-                  {companyData.contact.mobile}
-                </a>
+                <a href="tel:01715044073" className="hover:text-white transition-colors">0171 504 4073</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <a href={`mailto:${companyData.contact.email}`} className="hover:text-white transition-colors">
-                  {companyData.contact.email}
-                </a>
+                <a href="mailto:info@oerlicke.de" className="hover:text-white transition-colors">info@oerlicke.de</a>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>{companyData.contact.address.street}, {companyData.contact.address.city}</span>
+                <span>Brüder-Grimm-Straße 43, 36100 Petersberg</span>
               </li>
             </ul>
           </div>
@@ -95,20 +82,24 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Zertifikate</h4>
             <div className="space-y-4">
-              {companyData.certifications.map((cert, index) => {
-                const IconComponent = iconMap[cert.icon as keyof typeof iconMap];
-                return (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center">
-                      <IconComponent className={`h-6 w-6 ${cert.color}`} />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-sm">{cert.name}</div>
-                      <div className="text-xs text-gray-400">{cert.status}</div>
-                    </div>
-                  </div>
-                );
-              })}
+              <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center">
+                  <Tag className="h-6 w-6 text-yellow-400" />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">Handwerkskammer</div>
+                  <div className="text-xs text-gray-400">Zertifiziert</div>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center">
+                  <Shield className="h-6 w-6 text-blue-400" />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">TÜV</div>
+                  <div className="text-xs text-gray-400">Geprüft</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -116,7 +107,7 @@ export default function Footer() {
         <Separator className="my-12 bg-gray-700" />
         
         <div className="text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} {companyData.company.name}. Alle Rechte vorbehalten.</p>
+          <p>&copy; 2024 Sanitär-Technik Oerlicke. Alle Rechte vorbehalten.</p>
           <div className="mt-4 space-x-6">
             <a href="#" className="hover:text-white transition-colors">Impressum</a>
             <a href="#" className="hover:text-white transition-colors">Datenschutz</a>
