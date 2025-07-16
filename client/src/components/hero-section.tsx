@@ -36,8 +36,7 @@ export default function HeroSection() {
             </Button>
             <Button 
               size="lg"
-              variant="outline" 
-              className="glassmorphism text-blue-200 border-white/20 hover:bg-white/20 hover:text-blue-100 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              className="bg-white text-primary hover:bg-blue-50 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
               onClick={() => window.open("https://wa.me/491715044073", "_blank")}
             >
               <i className="fab fa-whatsapp mr-2" />
