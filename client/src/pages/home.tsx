@@ -1,11 +1,14 @@
-import Navigation from "@/components/navigation";
-import HeroSection from "@/components/hero-section";
-import ServicesSection from "@/components/services-section";
-import AboutSection from "@/components/about-section";
-import TestimonialSection from "@/components/testimonial-section";
-import ContactSection from "@/components/contact-section";
-import FloatingCTA from "@/components/floating-cta";
-import Footer from "@/components/footer";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import ServicesSection from "@/components/ServicesSection";
+import AboutSection from "@/components/AboutSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import ContactSection from "@/components/ContactSection";
+import FloatingCTA from "@/components/FloatingCTA";
+import Footer from "@/components/Footer";
+
+
+
 
 export default function Home() {
   return (
