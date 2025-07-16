@@ -1,0 +1,98 @@
+{
+  "company": {
+    "name": "Sanitär-Technik Oerlicke",
+    "shortName": "STO Oerlicke",
+    "owner": "Claus Oerlicke",
+    "founded": "1999",
+    "description": "Ihr Meisterbetrieb für Sanitär- und Heizungstechnik in Fulda. Seit 1999 mit Erfahrung und Qualität.",
+    "tagline": "Seit 1999 in Fulda - Notdienst 24h • Meisterqualität • Faire Preise"
+  },
+  "contact": {
+    "phone": "0661 942 7416",
+    "mobile": "0171 504 4073",
+    "email": "info@oerlicke.de",
+    "website": "www.oerlicke.de",
+    "address": {
+      "street": "Brüder-Grimm-Straße 43",
+      "city": "36100 Petersberg",
+      "country": "Germany"
+    }
+  },
+  "services": [
+    {
+      "title": "Notdienst 24h",
+      "description": "Schnelle Hilfe bei Wasserschäden, verstopften Rohren und Heizungsausfällen",
+      "icon": "Wrench",
+      "color": "text-red-500",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "title": "Badsanierung",
+      "description": "Moderne Badplanung mit fachlich fundierter Beratung für Alt- und Neubau",
+      "icon": "Bath",
+      "color": "text-blue-500",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "title": "Heizungsanlagen",
+      "description": "Moderne Heizungs- und Solaranlagen mit Brennwert-Technik",
+      "icon": "Flame",
+      "color": "text-orange-500",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "title": "Umwelttechnik",
+      "description": "Regenwassernutzung und energiesparende Umwelttechnik",
+      "icon": "Leaf",
+      "color": "text-green-500",
+      "bgColor": "bg-green-100"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Michael K.",
+      "location": "Fulda",
+      "initial": "M",
+      "rating": 5,
+      "text": "Schneller und professioneller Service! Herr Oerlicke hat unser Badezimmer renoviert und das Ergebnis ist fantastisch. Sehr zu empfehlen!"
+    },
+    {
+      "name": "Sarah L.",
+      "location": "Petersberg",
+      "initial": "S",
+      "rating": 5,
+      "text": "Zuverlässiger 24h Notdienst! Wasserschaden um 2 Uhr nachts - nach 30 Minuten war Herr Oerlicke da und hat das Problem gelöst."
+    },
+    {
+      "name": "Robert M.",
+      "location": "Fulda",
+      "initial": "R",
+      "rating": 5,
+      "text": "Kompetente Beratung und faire Preise. Die neue Heizungsanlage läuft perfekt und wir sparen viel Energie. Danke!"
+    }
+  ],
+  "businessHours": {
+    "weekdays": "Mo-Fr: 7:00 - 18:00 Uhr",
+    "saturday": "Sa: 8:00 - 16:00 Uhr",
+    "emergency": "Notdienst: 24h verfügbar"
+  },
+  "certifications": [
+    {
+      "name": "Handwerkskammer",
+      "status": "Zertifiziert",
+      "icon": "Tag",
+      "color": "text-yellow-400"
+    },
+    {
+      "name": "TÜV",
+      "status": "Geprüft",
+      "icon": "Shield",
+      "color": "text-blue-400"
+    }
+  ],
+  "socialMedia": {
+    "whatsapp": "https://wa.me/491715044073",
+    "facebook": "https://www.facebook.com",
+    "googleMaps": "https://www.google.com/maps/place/Brüder-Grimm-Straße+43,+36100+Petersberg"
+  }
+}
