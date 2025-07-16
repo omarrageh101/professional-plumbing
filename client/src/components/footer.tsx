@@ -39,7 +39,7 @@ export default function Footer() {
               <Button 
                 size="sm" 
                 className="bg-red-600 hover:bg-red-700 w-10 h-10 p-0"
-                onClick={() => window.open("https://www.google.com/maps/place/G%C3%BCntherstr.+9,+36043+Fulda", "_blank")}
+                onClick={() => window.open("https://www.google.com/maps/place/Brüder-Grimm-Straße+43,+36100+Petersberg", "_blank")}
               >
                 <i className="fab fa-google" />
               </Button>
@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Güntherstr. 9, 36043 Fulda</span>
+                <span>Brüder-Grimm-Straße 43, 36100 Petersberg</span>
               </li>
             </ul>
           </div>

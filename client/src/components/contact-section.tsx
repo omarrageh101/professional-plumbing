@@ -73,8 +73,8 @@ export default function ContactSection() {
                   <div>
                     <div className="font-semibold text-foreground">Adresse</div>
                     <div className="text-muted-foreground">
-                      Güntherstr. 9<br />
-                      36043 Fulda
+                      Brüder-Grimm-Straße 43<br />
+                      36100 Petersberg
                     </div>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function ContactSection() {
               <CardContent className="p-0">
                 <div className="w-full h-80 bg-gray-200 rounded-xl overflow-hidden">
                   <iframe 
-                    src="https://www.google.com/maps?q=Güntherstr.+9,+36043+Fulda,+Germany&output=embed"
+                    src="https://www.google.com/maps?q=Brüder-Grimm-Straße+43,+36100+Petersberg,+Germany&output=embed"
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }}
